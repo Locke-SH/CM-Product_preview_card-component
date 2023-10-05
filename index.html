@@ -30,8 +30,8 @@
 
     .main-container {
       display:grid;
-      grid-template-columns: 33% 17% 17% 33%;
-      grid-template-rows:15% 70% 15%;
+      grid-template-columns: 420px 300px 300px 420px;;
+      grid-template-rows:150px 450px 150px;
     }
 
     img {
@@ -53,7 +53,7 @@
     .heading1 {
       font-family: "Montserrat", sans-serif;
       letter-spacing: 0.4em;
-      font-size: 0.6em;;
+      font-size: 0.8em;;
       font-weight: 500;
       text-transform: uppercase;
       color: hsl(228, 12%, 48%);
@@ -63,53 +63,52 @@
 
     .heading2 {
       font-family: "Fraunces", serif;
-      font-size: 1.6em;
+      font-size: 2.1em;
       line-height: 92%;
       font-weight: 700;
-      margin: 11% 10% 0% 13%;
+      margin: 8% 18% 0% 13%;
     }
 
     .main_text {
 
       font-family: "Montserrat", sans-serif;
       font-weight: 500;
-      font-size: 0.8em;
+      font-size: 0.9em;
       color: hsl(228, 12%, 48%);
-      margin: 11% 10% 0% 13%;
+      margin: 7% 10% 0% 13%;
       line-height: 150%;
     }
 
-    .price-container {
-      display: grid;
-      grid-template-columns: 50% 50%;
-
-    }
-
     .main_price {
+      display:inline-block;
+      margin-top: 8%;
+      margin-left: 13%;
       font-family: "Fraunces", serif;
       font-weight: 700;
-      font-size: 35px;
+      font-size: 33px;
       color: hsl(158, 36%, 37%);
-      margin-left: 30px;
+
 
     }
-
     .old-price {
+      display:inline-block;
+      position: relative;
       font-family: "Fraunces", serif;
       font-weight: 500;
+      font-size: 13px;
       text-decoration: line-through;
       color: hsl(228, 12%, 48%);
-      margin-top: 9px;
-      margin-left: 30px;
+      margin-left:13px;
+      top: -9px;
     }
 
     .button {
       font-family: "Montserrat", sans-serif;
       font-weight: 500;
-      border-radius: 5px;
+      border-radius: 7px;
       background-color: hsl(158, 36%, 37%);
       color: hsl(0, 0%, 100%);
-      margin: 20px 30px 60px 30px;
+      margin: 30px 30px 60px 30px;
       height: 50px;
       text-align:center;
       padding-top: 15px;
@@ -141,10 +140,8 @@
       <p class="heading2">Gabrielle Essence Eau De Parfum</p>
       <p class="main_text">A floral, solar and voluptuous interpretation composed by Olivier Polge,
         Perfumer-Creator for the House of CHANEL.</p>
-        <div class="price-container">
           <div class="main_price">$149.99</div>
           <div class="old-price">$169.99</div>
-      </div>
       <div class="button">
         <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
           <path
