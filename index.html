@@ -30,7 +30,7 @@
 
     .main-container {
       display:grid;
-      grid-template-columns: 420px 300px 300px 420px;;
+      grid-template-columns: auto 300px 300px auto;;
       grid-template-rows:150px 450px 150px;
     }
 
@@ -53,7 +53,7 @@
     .heading1 {
       font-family: "Montserrat", sans-serif;
       letter-spacing: 0.4em;
-      font-size: 0.8em;;
+      font-size: 0.8em;
       font-weight: 500;
       text-transform: uppercase;
       color: hsl(228, 12%, 48%);
@@ -122,6 +122,67 @@
       margin-left: 10px;
       
     }
+
+    @media only screen and (max-width: 375px) {
+    
+    .main-container {
+      display:grid;
+      grid-template-columns: auto 339px auto ;
+      grid-template-rows:20px 240px 380px 20px;
+    }
+
+    img {
+      content: url("images/image-product-mobile.jpg");
+      grid-column: 2/3;
+      grid-row: 2/3;
+      object-fit:cover;
+      max-width: 100%;
+      height: 100%;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    .sub-container {
+      border-radius: 0px 0px 10px 10px;
+      background-color: hsl(0, 0%, 100%);
+      grid-column: 2/3;
+      grid-row: 3/4;
+
+    }
+
+    .heading1{
+      margin: 7% 0% 0% 8%;
+      font-size: 0.7em;
+      
+
+    }
+
+    .heading2{
+      margin: 4% 0% 0% 8%;
+      font-size: 2em;
+      
+
+    }
+
+    .main_text{
+      margin: 4% 3% 0% 8%;
+
+    }
+
+    .main_price{
+      margin: 10% 5% 0% 8%;
+      
+    }
+
+    .old-price{
+      margin: 0% 0% 0% 0%;
+
+    }
+
+    .button {
+      margin: 5% 8% 0% 8%;
+    }
+  }
+
 
     
 
